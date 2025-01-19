@@ -8,8 +8,8 @@ Forest Monitoring Under Domain Shift](https://openaccess.thecvf.com/content/CVPR
 
 Class Count Distribution   |  Class Count Distribution
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/boulder-001_class_distribution.png) |  ![image](https://github.com/user-attachments/assets/fd46770c-b843-4b34-a59b-3f55c34b1477)
-![image](https://github.com/user-attachments/assets/6098357b-b330-4b63-9016-342a392ff513) |  ![image](https://github.com/user-attachments/assets/98cbb477-36d5-4d70-be87-92b46a29fcbe)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/boulder-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_class_distribution.png)
 
 Disclaimer: ....
 
