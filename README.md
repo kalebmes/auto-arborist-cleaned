@@ -48,8 +48,10 @@ As a further data-cleaning step, we eliminated bounding boxes located at the ext
 
 After Case I   |  After Case II
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/boulder-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_class_distribution.png)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_processed_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_processed_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_processed_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_processed_class_distribution.png)
 
 ## Experimental Results & Comparison
 - Backbones : ResNet (maybe), EfficientNet, ConvNext, RegNet
