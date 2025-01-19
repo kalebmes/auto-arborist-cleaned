@@ -30,7 +30,9 @@ We present two key data-cleaning stages, each contributing to improved results b
 ### Case I   : No Bounding Box
 In this stage, we removed images with no trees detected. These images were still included in the training and testing sets of the Auto Arborist dataset despite not containing any valid tree information. This lead to noticeable improvements in model performance in addition to improving the dataset's quality and consistency.
 
-Sample Removed Images Here
+Images with No Trees   |  Images with no Trees
+:-------------------------:|:-------------------------:
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg)
 
 ### Case II  : Boundary-Sided Bounding Boxes
 As a further data-cleaning step, we eliminated bounding boxes located at the extreme left or right edges of the images. These bounding boxes are less likely to contain the focus tree, as multiple trees are detected in each image, and the bounding box for the focus tree should ideally be centrally located. Since the dataset lacks reliable metadata for pinpointing the focus tree, we developed and implemented a heuristic-based filtering algorithm that refines bounding box selection by removing irrelevant or misleading bounding boxes. Specifically:
@@ -38,12 +40,15 @@ As a further data-cleaning step, we eliminated bounding boxes located at the ext
 * Bounding boxes situated at the extreme left, right, top, or bottom edges of the image are filtered out, particularly if they are small in size compared to the image dimensions.
 * For the remaining bounding boxes, we prioritize those closer to the center of the image or those meeting certain size thresholds.
 
-(Insert images showing removed bounding boxes here) as an arrow indicating to (Insert images showing final cropped results here)
+Original Image   |  After Cleaning
+:-------------------------:|:-------------------------:
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_507004779690687407_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_507004779690687407_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 
 ### Case III : Minimal Alignment? 
 
 ## Further Analysis and Discussion
-- Tables : Summarization of class distribution, before and after cleaning, etc.
 - The following figure illustrates how the class distribution remained unchanged after removing images without bounding boxes and performing further cleaning.
 
 After Case I   |  After Case II
