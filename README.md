@@ -23,7 +23,7 @@ To address this, our project focuses on developing a robust preprocessing pipeli
 
 - Technical Challenges --> fine-grained problem, i.e., very large intra-class variation, very small inter-class variation 
   
-## Proposed Pipeline and Insights
+## Preprocessing Pipeline and Insights
 
 We present two key data-cleaning stages, each contributing to improved results by addressing issues in the raw dataset:
 
