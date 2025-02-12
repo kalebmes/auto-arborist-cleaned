@@ -39,7 +39,13 @@ In this stage, we removed images with no trees detected. These images were still
 <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6015415117226351339_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg" width="400" height="500">
 
 
-### Case II : Boundary-Sided Bounding Boxes
+### Case II : Bounding Boxes w/o Central Point (Blue Dot)
+ No Central Point | No Central Point
+:-------------------------:|:-------------------------:
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/sample_images/tree_10488919475029933921_streetlevel_acer_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/sample_images/tree_8840950684557779477_streetlevel_acer_image_detected.jpeg" width="400" height="500">
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/sample_images/tree_15130324269649476291_streetlevel_acer_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/sample_images/tree_13376775108361553087_streetlevel_acer_image_detected.jpeg" width="400" height="500">
+
+### Case III : Boundary-Sided Bounding Boxes
 As a further data-cleaning step, we eliminated bounding boxes located at the extreme left or right edges of the images. These bounding boxes are less likely to contain the focus tree, as multiple trees are detected in each image, and the bounding box for the focus tree should ideally be centrally located. Since the dataset lacks reliable metadata for pinpointing the focus tree, we developed and implemented a heuristic-based filtering algorithm that refines bounding box selection by removing irrelevant or misleading bounding boxes. Specifically:
 
 * Bounding boxes situated at the extreme left, right, top, or bottom edges of the image are filtered out, particularly if they are small in size compared to the image dimensions.
@@ -50,8 +56,6 @@ Original Image   |  After Cleaning
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_12770208626947435342_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_12770208626947435342_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3675578478330370074_streetlevel_betula_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3675578478330370074_streetlevel_betula_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_2433178162496390065_streetlevel_caragana_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_2433178162496390065_streetlevel_caragana_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
-
-### Case III : Bounding Boxes w/o Central Point (Blue Dot)
 
 ## Further Analysis and Discussion
 - The following figure illustrates how the class distribution remained unchanged after removing images without bounding boxes and performing further cleaning.
