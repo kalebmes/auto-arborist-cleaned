@@ -27,9 +27,9 @@ To address this, our project focuses on developing a robust preprocessing pipeli
 
 Our data-cleaning pipeilne involves **three removal cases**, each helping in identifying the target trees corresponding to the annotated labels, resulting in a cleaner datasetcan for model training.
 
-**Note that the sample images shown in this analysis are taken from the Sioux Falls city (Region C).**
+**Note that the sample images shown in this analysis are taken from the Sioux Falls city (Region Central).**
 
-### Case I : Images w/o Bounding Box, i.e., No Tree Detected
+### Case I : Images w/o Bounding Boxes, i.e., No Tree Detected
 In this stage, we removed images with no trees detected. These images were still included in the training and testing sets of the Auto Arborist dataset despite not containing any valid tree information. This lead to noticeable improvements in model performance in addition to improving the dataset's quality and consistency.
 
  Images w/o Bounding Boxes | Images w/o Bounding Boxes
@@ -49,7 +49,7 @@ Original Image   |  After Cleaning
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 
-### Case III : Minimal Alignment? 
+### Case III : Bounding Boxes w/o Central Point (Blue Dot)
 
 ## Further Analysis and Discussion
 - The following figure illustrates how the class distribution remained unchanged after removing images without bounding boxes and performing further cleaning.
@@ -65,9 +65,10 @@ After Case I   |  After Case II
 
 
 ## Experimental Results & Comparison
--  Similar to the original paper, we report the experimental results for ResNetIR-100 in this compilation, which includes all cities in Region Central, i.e., Sioux Falls, Calgary, Edmonton, Denver, and Boulder City. 
--  Technical insights of our proposed model and additional empirical findings will be disclosed in our manuscript.
--  
+-  Similar to the original paper, we report the experimental results for ResNetIR-100 in this compilation, which includes only two cities in Region Central, i.e., Sioux Falls and Calgary. 
+-  **Our goal is to reproduce the experimental results with only single-view images provided, alongside our cleaned dataset.**
+-  Other technical insights of our proposed model and additional empirical findings will be disclosed in our manuscript.
+
 <span style="color:red">I will compile this section w/ our latest results.</span>
 
 ## Our Manuscript
@@ -76,9 +77,8 @@ After Case I   |  After Case II
 We are in the midst of compiling our manuscript for a journal submission. The archive version will be made public once it is ready.
 
 ## Contact Information 
-
-Cheng Yaw Low, MPI-SP, Germany, Email: chengy-yaw.low@mpi-sp.org
-Kaleb Asfew, KAIST, South Korea
-Meeyoung Cha, MPI-SP, Germany
+-  Cheng Yaw Low, MPI-SP, Germany, Email: cheng-yaw.low@mpi-sp.org
+-  Kaleb Asfew, KAIST, South Korea
+-  Meeyoung Cha, MPI-SP, Germany
 
 
