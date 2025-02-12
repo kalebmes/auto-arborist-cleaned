@@ -34,8 +34,10 @@ In this stage, we removed images with no trees detected. These images were still
 
  Images w/o Bounding Boxes | Images w/o Bounding Boxes
 :-------------------------:|:-------------------------:
-<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg" width="400" height="500">
-Image 3 | Image 4 (and more?)
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/test/betula/tree_1350265536637838191_streetlevel_betula_image_detected.jpeg" width="400" height="500">
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_13903392559040084811_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_18196125659405314054_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500">
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6015415117226351339_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg" width="400" height="500">
+
 
 ### Case II : Boundary-Sided Bounding Boxes
 As a further data-cleaning step, we eliminated bounding boxes located at the extreme left or right edges of the images. These bounding boxes are less likely to contain the focus tree, as multiple trees are detected in each image, and the bounding box for the focus tree should ideally be centrally located. Since the dataset lacks reliable metadata for pinpointing the focus tree, we developed and implemented a heuristic-based filtering algorithm that refines bounding box selection by removing irrelevant or misleading bounding boxes. Specifically:
