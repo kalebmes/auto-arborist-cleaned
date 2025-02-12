@@ -25,18 +25,19 @@ To address this, our project focuses on developing a robust preprocessing pipeli
   
 ## Preprocessing Pipeline and Insights
 
-We present two key data-cleaning stages, each contributing to improved results by addressing issues in the raw dataset:
+Our data-cleaning pipeilne involves **three removal cases**, each helping in identifying the target trees corresponding to the annotated labels, resulting in a cleaner datasetcan for model training.
 
-### Case I   : No Bounding Box, i.e., No Tree Detected
+**Note that the sample images shown in this analysis are taken from the Sioux Falls city (Region C).**
+
+### Case I : Images w/o Bounding Box, i.e., No Tree Detected
 In this stage, we removed images with no trees detected. These images were still included in the training and testing sets of the Auto Arborist dataset despite not containing any valid tree information. This lead to noticeable improvements in model performance in addition to improving the dataset's quality and consistency.
 
-Images with No Tree Detected   |  Images with no Trees Detected
+ Images w/o Bounding Boxes | Images w/o Bounding Boxes
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg)
-Extra 1 | Extra 2
-Extra 3 | Extra 4
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg" width="400" height="500">
+Image 3 | Image 4 (and more?)
 
-### Case II  : Boundary-Sided Bounding Boxes
+### Case II : Boundary-Sided Bounding Boxes
 As a further data-cleaning step, we eliminated bounding boxes located at the extreme left or right edges of the images. These bounding boxes are less likely to contain the focus tree, as multiple trees are detected in each image, and the bounding box for the focus tree should ideally be centrally located. Since the dataset lacks reliable metadata for pinpointing the focus tree, we developed and implemented a heuristic-based filtering algorithm that refines bounding box selection by removing irrelevant or misleading bounding boxes. Specifically:
 
 * Bounding boxes situated at the extreme left, right, top, or bottom edges of the image are filtered out, particularly if they are small in size compared to the image dimensions.
@@ -60,11 +61,24 @@ After Case I   |  After Case II
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_processed_class_distribution.png)
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_processed_class_distribution.png)
 
-## Experimental Results & Comparison
-- Backbones : ResNet (maybe), EfficientNet, ConvNext, RegNet
+<font color="red">Maybe we have to include a table to summarize the number of images before and after our data-cleaning pipeline.</font>
 
-## Manuscript Compilation
+
+## Experimental Results & Comparison
+-  Similar to the original paper, we report the experimental results for ResNetIR-100 in this compilation, which includes all cities in Region Central, i.e., Sioux Falls, Calgary, Edmonton, Denver, and Boulder City. 
+-  Technical insights of our proposed model and additional empirical findings will be disclosed in our manuscript.
+-  
+<span style="color:red">I will compile this section w/ our latest results.</span>
+
+## Our Manuscript
+
+
+We are in the midst of compiling our manuscript for a journal submission. The archive version will be made public once it is ready.
 
 ## Contact Information 
+
+Cheng Yaw Low, MPI-SP, Germany, Email: chengy-yaw.low@mpi-sp.org
+Kaleb Asfew, KAIST, South Korea
+Meeyoung Cha, MPI-SP, Germany
 
 
