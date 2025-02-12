@@ -69,12 +69,9 @@ After Case I   |  After Case II
 -  **Our goal is to reproduce the experimental results with only single-view images provided, alongside our cleaned dataset.**
 -  Other technical insights of our proposed model and additional empirical findings will be disclosed in our manuscript.
 
-<span style="color:red">I will compile this section w/ our latest results.</span>
 
 ## Our Manuscript
-
-
-We are in the midst of compiling our manuscript for a journal submission. The archive version will be made public once it is ready.
+We are preparing our manuscript for journal submission. The archived version will be made publicly available once it is ready.
 
 ## Contact Information 
 -  Cheng Yaw Low, MPI-SP, Germany, Email: cheng-yaw.low@mpi-sp.org
