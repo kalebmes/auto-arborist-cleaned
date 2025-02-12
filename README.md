@@ -8,8 +8,8 @@ Forest Monitoring Under Domain Shift](https://openaccess.thecvf.com/content/CVPR
 
 Class Count Distribution   |  Class Count Distribution
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/boulder-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_desc_class_distribution.png)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_desc_class_distribution.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/boulder-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_desc_class_distribution_right.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_desc_class_distribution_right.png)
 
 Disclaimer: ....
 
@@ -58,10 +58,10 @@ Original Image   |  After Cleaning
 
 After Case I   |  After Case II
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_processed_class_distribution_right.png)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_processed_class_distribution_right.png)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_processed_class_distribution_right.png)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_desc_class_distribution.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_processed_class_distribution_right.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/denver-001_processed_class_distribution_right.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/calgary-001_processed_class_distribution_right.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/edmonton-001_processed_class_distribution_right.png)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_desc_class_distribution_right.png) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/class_distribution_plots/sioux_falls-001_processed_class_distribution_right.png)
 
 <font color="red">Maybe we have to include a table to summarize the number of images before and after our data-cleaning pipeline.</font>
 
