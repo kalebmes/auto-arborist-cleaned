@@ -27,10 +27,10 @@ To address this, our project focuses on developing a robust preprocessing pipeli
 
 We present two key data-cleaning stages, each contributing to improved results by addressing issues in the raw dataset:
 
-### Case I   : No Bounding Box
+### Case I   : No Bounding Box, i.e., No Tree Detected
 In this stage, we removed images with no trees detected. These images were still included in the training and testing sets of the Auto Arborist dataset despite not containing any valid tree information. This lead to noticeable improvements in model performance in addition to improving the dataset's quality and consistency.
 
-Images with No Trees   |  Images with no Trees
+Images with No Tree Detected   |  Images with no Trees Detected
 :-------------------------:|:-------------------------:
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg)
 
