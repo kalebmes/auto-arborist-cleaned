@@ -47,9 +47,9 @@ As a further data-cleaning step, we eliminated bounding boxes located at the ext
 
 Original Image   |  After Cleaning
 :-------------------------:|:-------------------------:
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_507004779690687407_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_507004779690687407_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_5543557140494082615_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
-![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3863005484099170008_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_12770208626947435342_streetlevel_acer_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_12770208626947435342_streetlevel_acer_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3675578478330370074_streetlevel_betula_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_3675578478330370074_streetlevel_betula_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
+![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_2433178162496390065_streetlevel_caragana_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_2433178162496390065_streetlevel_caragana_image_cropped_tol_0.1_eps_0.1_pad_0_veryclean.jpeg)
 
 ### Case III : Bounding Boxes w/o Central Point (Blue Dot)
 
