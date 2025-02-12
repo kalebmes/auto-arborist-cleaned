@@ -33,6 +33,8 @@ In this stage, we removed images with no trees detected. These images were still
 Images with No Tree Detected   |  Images with no Trees Detected
 :-------------------------:|:-------------------------:
 ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg) |  ![image](https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg)
+Extra 1 | Extra 2
+Extra 3 | Extra 4
 
 ### Case II  : Boundary-Sided Bounding Boxes
 As a further data-cleaning step, we eliminated bounding boxes located at the extreme left or right edges of the images. These bounding boxes are less likely to contain the focus tree, as multiple trees are detected in each image, and the bounding box for the focus tree should ideally be centrally located. Since the dataset lacks reliable metadata for pinpointing the focus tree, we developed and implemented a heuristic-based filtering algorithm that refines bounding box selection by removing irrelevant or misleading bounding boxes. Specifically:
