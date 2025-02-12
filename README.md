@@ -34,8 +34,8 @@ In this stage, we removed images with no trees detected. These images were still
 
  Images w/o Bounding Boxes | Images w/o Bounding Boxes
 :-------------------------:|:-------------------------:
-<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1350265536637838191_streetlevel_betula_image_detected.jpeg" width="400" height="500">
-<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_13903392559040084811_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_18196125659405314054_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500">
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1680078374270988337_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_13903392559040084811_streetlevel_betula_image_detected.jpeg" width="400" height="500">
+<img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_1350265536637838191_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_18196125659405314054_streetlevel_fraxinus_image_detected.jpeg" width="400" height="500">
 <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6015415117226351339_streetlevel_betula_image_detected.jpeg" width="400" height="500"> | <img src="https://github.com/kalebmes/auto-arborist-cleaned/blob/main/sample_images/tree_6773050066674462020_streetlevel_ulmus_image_detected.jpeg" width="400" height="500">
 
 
